@@ -1,12 +1,17 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from django.template import loader
+from .models import Topic
+import logging
 
+logger = logging.getLogger(__name__)
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'home/home.html') # location of html template
+    context = {
+        'topics': Topic.objects.all()
+    }
+    return render(request, 'home/home.html', context) # location of html template
 
 def contact(request):
     return render(request, 'home/basic.html',
