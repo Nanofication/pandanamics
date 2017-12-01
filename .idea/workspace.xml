@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf748e10-e170-403b-ae44-f7bfc9b72503" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pandanamics/blog/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pandanamics/blog/migrations/0002_auto_20171128_2131.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pandanamics/blog/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pandanamics/home/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pandanamics/home/templates/home/includes/carousel.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pandanamics/blog/admin.py" afterPath="$PROJECT_DIR$/pandanamics/blog/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pandanamics/blog/models.py" afterPath="$PROJECT_DIR$/pandanamics/blog/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pandanamics/blog/views.py" afterPath="$PROJECT_DIR$/pandanamics/blog/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pandanamics/home/admin.py" afterPath="$PROJECT_DIR$/pandanamics/home/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pandanamics/home/models.py" afterPath="$PROJECT_DIR$/pandanamics/home/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pandanamics/home/templates/home/header.html" afterPath="$PROJECT_DIR$/pandanamics/home/templates/home/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pandanamics/home/templates/home/home.html" afterPath="$PROJECT_DIR$/pandanamics/home/templates/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pandanamics/home/views.py" afterPath="$PROJECT_DIR$/pandanamics/home/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +16,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.749499">
+    <splitter split-orientation="horizontal" split-proportion="0.43019372">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
@@ -57,8 +44,8 @@
           <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pandanamics/home/templates/home/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+                <state relative-caret-position="408">
+                  <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -78,7 +65,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pandanamics/pandanamics/settings.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="674">
@@ -88,11 +75,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pandanamics/home/templates/home/header.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                <state relative-caret-position="728">
+                  <caret line="68" column="4" lean-forward="false" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -137,7 +124,6 @@
         <option value="$PROJECT_DIR$/pandanamics/home/templates/home/carousel.html" />
         <option value="$PROJECT_DIR$/pandanamics/home/templates/home/footer.html" />
         <option value="$PROJECT_DIR$/pandanamics/__init__.py" />
-        <option value="$PROJECT_DIR$/pandanamics/home/templates/home/header.html" />
         <option value="$PROJECT_DIR$/pandanamics/home/models.py" />
         <option value="$PROJECT_DIR$/pandanamics/blog/admin.py" />
         <option value="$PROJECT_DIR$/pandanamics/blog/models.py" />
@@ -148,6 +134,7 @@
         <option value="$PROJECT_DIR$/pandanamics/home/views.py" />
         <option value="$PROJECT_DIR$/pandanamics/pandanamics/settings.py" />
         <option value="$PROJECT_DIR$/pandanamics/home/templates/home/home.html" />
+        <option value="$PROJECT_DIR$/pandanamics/home/templates/home/header.html" />
       </list>
     </option>
   </component>
@@ -969,16 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pandanamics/home/templates/home/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pandanamics/blog/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1015,9 +992,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pandanamics/home/templates/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="408">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pandanamics/home/templates/home/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="68" column="4" lean-forward="false" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
