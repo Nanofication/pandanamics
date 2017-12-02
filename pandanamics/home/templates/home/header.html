@@ -11,6 +11,7 @@
 
 	<!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'home/css/modern-business.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{% static 'home/font-awesome/css/font-awesome.min.css' %}" type="text/css">
@@ -66,12 +67,12 @@
 
     {% block content %}
     {% endblock %}
-    
+
+
+
     {% block head-javascript %}
-        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     {% endblock %}
 
 </body>
