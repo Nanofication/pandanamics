@@ -1,6 +1,10 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import Topic
+from django.apps import apps
+
+Post = apps.get_model('blog', 'Post')
+
 import logging
 
 logger = logging.getLogger(__name__)
@@ -9,7 +13,8 @@ logger = logging.getLogger(__name__)
 
 def index(request):
     context = {
-        'topics': Topic.objects.all()
+        'topics': Topic.objects.all(),
+        'posts': Post.objects.all()
     }
     return render(request, 'home/home.html', context) # location of html template
 

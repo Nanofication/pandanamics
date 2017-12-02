@@ -23,3 +23,19 @@
 .carousel {
     padding-top: 50px;
 }
+
+.carousel-title h1 {
+    font-family: Garamond;
+    font-size: 3em;
+    color: blue !important;
+    top: 0;
+    bottom: auto;
+}
+
+.carousel-date p {
+    font-family: Garamond;
+    font-size: 3em;
+    color: blue !important;
+    top: 0;
+    bottom: auto;
+}

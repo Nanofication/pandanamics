@@ -3,17 +3,19 @@
 {% block content %}
 
 <header class="container_special">
-    <div id="carousel-generic" class="carousel slide" data-ride="carousel" data-interval="0" data-slide-to="{{forloop.counter0}}">
+    <div id="carousel-generic" class="carousel slide" style="height: 300px;" data-ride="carousel" data-interval="0" data-slide-to="{{forloop.counter0}}">
         <div class="carousel-inner" role="listbox">
             <!--These lines tell the items in exhibit to be active until they run out of content i.e. images-->
-            {% for topic in topics reversed %}
+            {% for post in posts reversed %}
                 <div class="item {% if forloop.first %} active {%   endif %}">
                   <div align="center">
                     <!--The line below calls the item in the class where the files have been uploaded in the Admin Panel-->
-                    <img src="static/home/media/{{topic.image}}">
+                    <img class="img-responsive img-hover" src="static/home/media/{{post.topic.image}}">
                     <!--I like to add in captions for accessibility purposes. Also this slide is turned off so it doesn't automatically scroll.
                     Having a gallery automatically scroll is bad usability because screen readers will constantly restart everytime a new slide comes up-->
-                    <p> {{topic.title}} </p>
+                    <div class="carousel-title">
+                        <h1> {{post.topic.title}} </h1>
+                    </div>
                   </div>
                 </div>
             {% endfor %}
@@ -27,4 +29,22 @@
         </a>
     </div>
 </header>
+
+
+<div class="container">
+    <!-- Topics Section -->
+    <div class="row">
+        <div class="col-lg-12">
+             <h2 class="page-header">Project Stories</h2>
+        </div>
+        {% for topic in topics %}
+        <div class="col-md-4 col-sm-6">
+            <a href="#">
+                <img class="img-responsive img-hover" src="static/home/media/{{topic.image}}">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
 {% endblock %}
