@@ -22,6 +22,15 @@ def contact(request):
     return render(request, 'home/basic.html',
                   {'content':['If you would like to contact me, please email me',
                               'emailplaceholder@gmail.com']})
+def allTopics(request):
+    context = {
+        'topics': Topic.objects.all()
+    }
+    return render(request, 'home/all_topics.html',context)
+
 def topic(request, title):
     topic = Topic.objects.get(title=title)
-    return render(request, 'blog/topic.html',{'title': topic})
+    context = {
+        'topic': topic
+    }
+    return render(request, 'home/topic.html', context)

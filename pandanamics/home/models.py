@@ -15,4 +15,4 @@ class Topic(models.Model):
     image = models.ImageField()
 
     def __str__(self):
-        return "DISPLAY TITLE: %s        |    DB_TITLE: %s"  % (self.display_title, self.title)
+        return "DISPLAY TITLE: %s        |    DB_TITLE: %s" % (self.display_title, self.title)
