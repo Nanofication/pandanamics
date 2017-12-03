@@ -3,7 +3,7 @@
 {% block content %}
 
 <header class="container_special">
-    <div id="carousel-generic" class="carousel slide" style="height: 300px;" data-ride="carousel" data-interval="0" data-slide-to="{{forloop.counter0}}">
+    <div id="carousel-generic" class="carousel slide" style="height: 300px;" data-ride="carousel" data-interval="3000" data-slide-to="{{forloop.counter0}}">
         <div class="carousel-inner" role="listbox">
             <!--These lines tell the items in exhibit to be active until they run out of content i.e. images-->
             {% for post in posts reversed %}
@@ -15,6 +15,7 @@
                     Having a gallery automatically scroll is bad usability because screen readers will constantly restart everytime a new slide comes up-->
                     <div class="carousel-title">
                         <h1> {{post.topic.title}} </h1>
+                        <p> {{post.title}}</p>
                     </div>
                   </div>
                 </div>

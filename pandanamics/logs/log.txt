@@ -1,0 +1,138 @@
+DEBUG (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG (0.001) SELECT "home_topic"."id", "home_topic"."title", "home_topic"."date", "home_topic"."image" FROM "home_topic" WHERE "home_topic"."title" = 'test'; args=('test',)
+DEBUG Exception while resolving variable 'topic' in template 'blog/topic.html'.
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'topic'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'topic'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'topic'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [topic] in "[{'False': False, 'None': None, 'True': True}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x000001DD88FD9AE8>>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001DD88FD9B70>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001DD89040630>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'WARNING': 30, 'DEBUG': 10, 'ERROR': 40, 'INFO': 20}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001DD88FD8BE0>, 'request': <WSGIRequest: GET '/topics/test/'>}, {}, {'title': <Topic: test>}, {'block': <Block Node: content. Contents: [<TextNode: '\\n    <h3>'>, <Variable Node: topic.title>, <TextNode: '</h3>\\n    <p>REDIRECTED!<'>]>}]"
+INFO "GET /topics/test/ HTTP/1.1" 200 2184
+DEBUG (0.001) SELECT "home_topic"."id", "home_topic"."title", "home_topic"."date", "home_topic"."image" FROM "home_topic" LIMIT 21; args=()
+DEBUG (0.000) SELECT "blog_post"."id", "blog_post"."title", "blog_post"."body", "blog_post"."date", "blog_post"."topic_id" FROM "blog_post" LIMIT 21; args=()
+DEBUG Exception while resolving variable 'forloop' in template 'home/home.html'.
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'forloop'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forloop'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forloop'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forloop] in '[{\'False\': False, \'None\': None, \'True\': True}, {\'csrf_token\': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x000001DD88FD9AE8>>, \'user\': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001DD8906DAE8>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x000001DD8904B4E0>, \'DEFAULT_MESSAGE_LEVELS\': {\'SUCCESS\': 25, \'WARNING\': 30, \'DEBUG\': 10, \'ERROR\': 40, \'INFO\': 20}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001DD8902FE10>, \'request\': <WSGIRequest: GET \'/\'>}, {}, {\'topics\': <QuerySet [<Topic: Innovation Social 1>, <Topic: Innovation Social 2>, <Topic: test>]>, \'posts\': <QuerySet [<Post: Digital Ocean Is Awesome>, <Post: A.I is Love>]>}, {\'block\': <Block Node: content. Contents: [<TextNode: \'\\n\\n<header class="containe\'>, <Variable Node: forloop.counter0>, <TextNode: \'">\\n        <div class="ca\'>, <For Node: for post in posts, tail_len: 9 reversed>, <TextNode: \'\\n        </div>\\n        <\'>, <For Node: for topic in topics, tail_len: 3>, <TextNode: \'\\n    </div>\\n</div>\\n\\n\'>]>}]'
+DEBUG (0.000) SELECT "blog_post"."id", "blog_post"."title", "blog_post"."body", "blog_post"."date", "blog_post"."topic_id" FROM "blog_post"; args=()
+DEBUG (0.000) SELECT "home_topic"."id", "home_topic"."title", "home_topic"."date", "home_topic"."image" FROM "home_topic" WHERE "home_topic"."id" = 2; args=(2,)
+DEBUG (0.000) SELECT "home_topic"."id", "home_topic"."title", "home_topic"."date", "home_topic"."image" FROM "home_topic" WHERE "home_topic"."id" = 1; args=(1,)
+DEBUG (0.000) SELECT "home_topic"."id", "home_topic"."title", "home_topic"."date", "home_topic"."image" FROM "home_topic"; args=()
+INFO "GET / HTTP/1.1" 200 5537
+INFO "GET /static/home/media/Email_Screenshot.PNG HTTP/1.1" 304 0
+DEBUG (0.000) SELECT "home_topic"."id", "home_topic"."title", "home_topic"."date", "home_topic"."image" FROM "home_topic" WHERE "home_topic"."title" = 'test'; args=('test',)
+DEBUG Exception while resolving variable 'topic' in template 'blog/topic.html'.
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'topic'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'topic'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'topic'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [topic] in "[{'False': False, 'None': None, 'True': True}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x000001DD8908D048>>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001DD8906DE18>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001DD8904B470>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'WARNING': 30, 'DEBUG': 10, 'ERROR': 40, 'INFO': 20}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001DD8904B240>, 'request': <WSGIRequest: GET '/topics/test/'>}, {}, {'title': <Topic: test>}, {'block': <Block Node: content. Contents: [<TextNode: '\\n    <h3>'>, <Variable Node: topic.title>, <TextNode: '</h3>\\n    <p>REDIRECTED!<'>]>}]"
+INFO "GET /topics/test/ HTTP/1.1" 200 2184
+DEBUG (0.001) SELECT "blog_post"."id", "blog_post"."title", "blog_post"."body", "blog_post"."date", "blog_post"."topic_id" FROM "blog_post" ORDER BY "blog_post"."date" DESC LIMIT 25; args=()
+INFO "GET /blog/ HTTP/1.1" 200 2861
+DEBUG (0.001) SELECT "home_topic"."id", "home_topic"."title", "home_topic"."date", "home_topic"."image" FROM "home_topic" LIMIT 21; args=()
+DEBUG (0.001) SELECT "blog_post"."id", "blog_post"."title", "blog_post"."body", "blog_post"."date", "blog_post"."topic_id" FROM "blog_post" LIMIT 21; args=()
+DEBUG Exception while resolving variable 'forloop' in template 'home/home.html'.
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 882, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\context.py", line 87, in __getitem__
+    raise KeyError(key)
+KeyError: 'forloop'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 888, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forloop'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 896, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forloop'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nansq\Anaconda3\lib\site-packages\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forloop] in '[{\'False\': False, \'None\': None, \'True\': True}, {\'csrf_token\': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x000001DD8908D1E0>>, \'user\': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001DD8906DF28>>, \'perms\': <django.contrib.auth.context_processors.PermWrapper object at 0x000001DD89091AC8>, \'DEFAULT_MESSAGE_LEVELS\': {\'SUCCESS\': 25, \'WARNING\': 30, \'DEBUG\': 10, \'ERROR\': 40, \'INFO\': 20}, \'messages\': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001DD89087CF8>, \'request\': <WSGIRequest: GET \'/\'>}, {}, {\'topics\': <QuerySet [<Topic: Innovation Social 1>, <Topic: Innovation Social 2>, <Topic: test>]>, \'posts\': <QuerySet [<Post: Digital Ocean Is Awesome>, <Post: A.I is Love>]>}, {\'block\': <Block Node: content. Contents: [<TextNode: \'\\n\\n<header class="containe\'>, <Variable Node: forloop.counter0>, <TextNode: \'">\\n        <div class="ca\'>, <For Node: for post in posts, tail_len: 9 reversed>, <TextNode: \'\\n        </div>\\n        <\'>, <For Node: for topic in topics, tail_len: 3>, <TextNode: \'\\n    </div>\\n</div>\\n\\n\'>]>}]'
+DEBUG (0.000) SELECT "blog_post"."id", "blog_post"."title", "blog_post"."body", "blog_post"."date", "blog_post"."topic_id" FROM "blog_post"; args=()
+DEBUG (0.001) SELECT "home_topic"."id", "home_topic"."title", "home_topic"."date", "home_topic"."image" FROM "home_topic" WHERE "home_topic"."id" = 2; args=(2,)
+DEBUG (0.000) SELECT "home_topic"."id", "home_topic"."title", "home_topic"."date", "home_topic"."image" FROM "home_topic" WHERE "home_topic"."id" = 1; args=(1,)
+DEBUG (0.000) SELECT "home_topic"."id", "home_topic"."title", "home_topic"."date", "home_topic"."image" FROM "home_topic"; args=()
+INFO "GET / HTTP/1.1" 200 5537

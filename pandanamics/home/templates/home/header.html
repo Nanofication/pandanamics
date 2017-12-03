@@ -16,6 +16,11 @@
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{% static 'home/font-awesome/css/font-awesome.min.css' %}" type="text/css">
 
+    {% block head-javascript %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    {% endblock %}
+
 </head>
 
 <body>
@@ -44,20 +49,6 @@
                     <li>
                         <a href="#">Contact</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -68,12 +59,6 @@
     {% block content %}
     {% endblock %}
 
-
-
-    {% block head-javascript %}
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    {% endblock %}
 
 </body>
 

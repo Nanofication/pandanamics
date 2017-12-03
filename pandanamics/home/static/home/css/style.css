@@ -39,3 +39,7 @@
     top: 0;
     bottom: auto;
 }
+
+.extra-padding {
+    padding-top: 50px;
+}

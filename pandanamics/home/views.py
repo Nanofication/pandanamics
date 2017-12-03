@@ -22,3 +22,6 @@ def contact(request):
     return render(request, 'home/basic.html',
                   {'content':['If you would like to contact me, please email me',
                               'emailplaceholder@gmail.com']})
+def topic(request, title):
+    topic = Topic.objects.get(title=title)
+    return render(request, 'blog/topic.html',{'title': topic})
