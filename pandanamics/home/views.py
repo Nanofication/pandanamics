@@ -1,9 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Topic
+from .models import Topic, Post
 from django.apps import apps
-
-Post = apps.get_model('blog', 'Post')
 
 import logging
 
