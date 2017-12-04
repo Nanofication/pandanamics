@@ -34,3 +34,10 @@ def topic(request, title):
         'posts': posts
     }
     return render(request, 'home/topic.html', context)
+
+def post(request, post_title):
+    post = Post.objects.get(title=post_title)
+    context = {
+        'post': post
+    }
+    return render(request, 'home/post.html', context)

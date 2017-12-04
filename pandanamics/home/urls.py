@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^contact/$', views.contact, name='contact'),
     url(r'^topics/', views.allTopics, name='allTopics'),
     url(r'^(?P<title>[-\w]+)/$', views.topic, name='topic'),
+    url(r'^([-\w]+)/(?P<post_title>[-\w]+)/$', views.post, name='post')
 ]
