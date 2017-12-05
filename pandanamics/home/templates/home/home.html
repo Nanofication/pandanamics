@@ -42,6 +42,7 @@
         </div>
         {% for topic in topics %}
         <div class="col-md-4 col-sm-6">
+            <h1>{{topic.display_title}}</h1>
             <a href="/{{topic.title}}">
                 <img class="img-responsive img-hover" src="static/home/media/{{topic.image}}">
             </a>

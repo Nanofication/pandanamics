@@ -37,7 +37,9 @@ def topic(request, title):
 
 def post(request, post_title):
     post = Post.objects.get(title=post_title)
+    posts = Post.objects.filter(topic=post.topic)
     context = {
-        'post': post
+        'post': post,
+        'posts': posts
     }
     return render(request, 'home/post.html', context)
