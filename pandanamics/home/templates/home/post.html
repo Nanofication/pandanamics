@@ -11,14 +11,22 @@
                 {{post.body|safe|linebreaks}}
             </div>
         </div>
-        <div class="col-sm-2" style="padding-top: 80px;">
+        <div class="col-sm-2" style="padding-top: 40px; padding-bottom: 20px; background-color: #4cae4c">
+            <div align="center" class="panel-heading img-hover">
+                <a href="/{{post.topic.title}}" style="color: white">
+                    <h3>{{post.topic.display_title}}</h3>
+                </a>
+            </div>
+
             <ul class="list-unstyled">
             {% for p in related_posts %}
-                <div align="center" class="panel">
+                <div align="center" class="panel" style="background-color: #4cae4c;">
                     <li>
-                        <a href="/{{p.topic.title}}/{{p.title}}">
+                        <a href="/{{p.topic.title}}/{{p.title}}" style="color: white">
                             {% if p == post %}
-                                <div class="panel-heading">{{p.display_title}}</div>
+                                <div class="panel-default" style="background-color: lightgreen; color: #0f0f0f">
+                                    {{p.display_title}}
+                                </div>
                             {% else %}
                                 <p>{{p.display_title}}</p>
                             {% endif %}
