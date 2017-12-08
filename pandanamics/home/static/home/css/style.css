@@ -13,7 +13,9 @@
     padding-top: 0px;
     padding-bottom: 0px;
     line-height: 80px;
+    color: white;
 }
+
 
 @media (max-width: 767px) {
     .navbar-nav > li > a {
@@ -49,4 +51,8 @@
 
 .extra-padding {
     padding-top: 50px;
+}
+
+body {
+    font-family: 'Ubuntu', serif;
 }
