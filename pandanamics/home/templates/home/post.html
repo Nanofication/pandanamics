@@ -2,22 +2,29 @@
 
 {% block content %}
     <div class="container extra-padding">
-        <div class="col-lg-8">
-                <div align="center">
-                    <h3>{{post.display_title}}</h3>
-                    <h6>on {{post.date}}</h6>
-                    <br>
-                    {{post.body|safe|linebreaks}}
-                </div>
+        <div class="col-sm-10">
+            <div align="center">
+                <h3>{{post.display_title}}</h3>
+                <h6>on {{post.date}}</h6>
             </div>
-        <div class="col-lg-4">
+            <div align="left">
+                {{post.body|safe|linebreaks}}
+            </div>
+        </div>
+        <div class="col-sm-2">
             <ul class="list-unstyled">
-            {% for post in posts %}
-                <li>
-                    <a href="/{{post.topic.title}}/{{post.title}}">
-                        <p>{{post.display_title}}</p>
-                    </a>
-                </li>
+            {% for p in related_posts %}
+                <div align="center" class="panel">
+                    <li>
+                        <a href="/{{p.topic.title}}/{{p.title}}">
+                            {% if p == post %}
+                                <div class="panel-heading">{{p.display_title}}</div>
+                            {% else %}
+                                <p>{{p.display_title}}</p>
+                            {% endif %}
+                        </a>
+                    </li>
+                </div>
             {% endfor %}
             </ul>
         </div>

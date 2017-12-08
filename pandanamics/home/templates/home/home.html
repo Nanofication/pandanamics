@@ -10,10 +10,10 @@
                 <div class="item {% if forloop.first %} active {%   endif %}">
                   <div align="center">
                     <!--The line below calls the item in the class where the files have been uploaded in the Admin Panel-->
-                    <a href="/{{post.topic.title}}/{{post.title}}">
+                    <a href="/{{post.topic.title}}">
                         <img class="img-responsive img-hover" src="static/home/media/{{post.topic.image}}">
-                        <!--I like to add in captions for accessibility purposes. Also this slide is turned off so it doesn't automatically scroll.
-                        Having a gallery automatically scroll is bad usability because screen readers will constantly restart everytime a new slide comes up-->
+                    </a>
+                    <a href="/{{post.topic.title}}/{{post.title}}">
                         <div class="carousel-title">
                             <h1> {{post.topic.display_title}} </h1>
                             <p> {{post.display_title}}</p>

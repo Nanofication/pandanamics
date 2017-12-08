@@ -40,6 +40,6 @@ def post(request, post_title):
     posts = Post.objects.filter(topic=post.topic)
     context = {
         'post': post,
-        'posts': posts
+        'related_posts': posts
     }
     return render(request, 'home/post.html', context)

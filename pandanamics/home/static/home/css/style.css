@@ -1,5 +1,12 @@
-.navbar-fixed-top {
+.navbar .navbar-default .navbar-fixed-top {
     min-height: 80px;
+    background-color: #4cae4c;
+    border-color: yellow;
+}
+
+.navbar-default {
+    background-color: #4cae4c;
+    border-color: chartreuse;
 }
 
 .navbar-nav > li > a {
