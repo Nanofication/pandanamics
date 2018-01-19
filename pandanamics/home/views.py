@@ -16,10 +16,15 @@ def index(request):
     }
     return render(request, 'home/home.html', context) # location of html template
 
-def contact(request):
-    return render(request, 'home/basic.html',
-                  {'content':['If you would like to contact me, please email me',
-                              'emailplaceholder@gmail.com']})
+def about(request):
+    return render(request, 'home/about.html')
+
+def blog(request):
+    context = {
+        'posts': Post.objects.all()
+    }
+    return render(request, 'home/blog.html', context)
+
 def allTopics(request):
     context = {
         'topics': Topic.objects.all()

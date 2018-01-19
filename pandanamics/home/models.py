@@ -1,5 +1,6 @@
 from django.db import models
 from django.apps import apps
+
 import re
 
 # Create your models here.
